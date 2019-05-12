@@ -8,7 +8,7 @@ node_js:
   # - "12"
   # - "10"
   # - "9"
-  # - "8"
+  - "8"
 script:
   # run cspell on cspell using pre-commit
   - pip install --user pre-commit

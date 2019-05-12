@@ -1,0 +1,35 @@
+{
+  "name": "cspell-monorepo",
+  "version": "1.0.0",
+  "description": "cspell monorepo.",
+  "main": "bin.js",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "install": "lerna bootstrap",
+    "prepare": "npm run build",
+    "spell-check": "cspell **/*.ts",
+    "test-spec": "npm run test-spec",
+    "test": "lerna run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cspell-app/cspell.git"
+  },
+  "keywords": [
+    "spelling",
+    "code",
+    "CI/CD"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cspell-app/cspell/issues"
+  },
+  "homepage": "https://github.com/cspell-app/cspell#readme",
+  "devDependencies": {
+    "cspell": "^3.2.10",
+    "lerna": "^3.13.4"
+  }
+}

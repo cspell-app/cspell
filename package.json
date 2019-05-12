@@ -13,7 +13,7 @@
     "spell-check": "cspell **/*.ts",
     "lint-travis": "lerna run lint-travis",
     "travis-coverage": "lerna run travis-coverage",
-    "test-spec": "npm run test-spec",
+    "test-spec": "lerna run test-spec",
     "test": "lerna run test"
   },
   "repository": {

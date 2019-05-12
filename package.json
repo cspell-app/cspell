@@ -11,6 +11,8 @@
     "install": "lerna bootstrap",
     "prepare": "npm run clean-build",
     "spell-check": "cspell **/*.ts",
+    "lint-travis": "lerna run lint-travis",
+    "travis-coverage": "lerna run travis-coverage",
     "test-spec": "npm run test-spec",
     "test": "lerna run test"
   },

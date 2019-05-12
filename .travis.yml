@@ -5,14 +5,15 @@ os:
   - osx
 node_js:
   - "node"
-  # - "12"
-  # - "10"
-  # - "9"
+  - "12"
+  - "10"
+  - "9"
   - "8"
 script:
   # run cspell on cspell using pre-commit
-  - pip install --user pre-commit
-  - pre-commit try-repo .
+  # - pip install --user pre-commit
+  # - pre-commit try-repo .
+
   # normal testing
   - npm install
   # the prepare script run during install currently does clean-build
@@ -21,3 +22,4 @@ script:
   # - npm run travis-coverage
   # - npm run test-spec
   - node ./bin.js trace test
+  - node ./bin.js "**/{*.ts,*.md}"

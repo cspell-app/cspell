@@ -20,6 +20,7 @@ test_script:
   - npm run test-spec
   # run app
   - node ./bin.js trace test
+  - node ./bin.js "**/{*.ts,*.md}"
 
 # Don't actually build.
 build: off

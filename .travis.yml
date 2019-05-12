@@ -5,10 +5,10 @@ os:
   - osx
 node_js:
   - "node"
-  - "12"
-  - "10"
-  - "9"
-  - "8"
+  # - "12"
+  # - "10"
+  # - "9"
+  # - "8"
 script:
   # run cspell on cspell using pre-commit
   - pip install --user pre-commit

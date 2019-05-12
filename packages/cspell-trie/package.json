@@ -16,7 +16,7 @@
     "test-watch": "mocha --watch --require ts-node/register --recursive \"src/**/*.test.ts\"",
     "build": "tsc -p .",
     "clean-build": "npm run clean && npm run build",
-    "coverage": "NODE_ENV=test nyc npm run test-ts",
+    "coverage": "NODE_ENV=test nyc --silent --no-clean --temp-dir=../../.nyc_output npm run test-ts",
     "test-ts": "NODE_ENV=test mocha --require ts-node/register --recursive --bail \"src/**/*.test.ts\"",
     "coverage-coveralls": "nyc report --reporter=text-lcov | coveralls",
     "travis-coverage": "npm run coverage && npm run coverage-coveralls",

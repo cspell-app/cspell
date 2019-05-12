@@ -8,11 +8,12 @@
     "build": "lerna run build",
     "clean-build": "lerna run clean-build",
     "clean": "lerna run clean",
+    "coverage": "rimraf .nyc_output && lerna run coverage",
     "install": "lerna bootstrap",
     "prepare": "npm run clean-build",
     "check-spelling": "cspell **/{*.ts,*.md}",
     "lint-travis": "lerna run lint-travis",
-    "travis-coverage": "lerna run travis-coverage",
+    "travis-coverage": "npm run coverage && nyc report --reporter=text-lcov | coveralls",
     "test-spec": "lerna run test-spec",
     "test": "lerna run test"
   },
@@ -32,7 +33,31 @@
   },
   "homepage": "https://github.com/cspell-app/cspell#readme",
   "devDependencies": {
+    "coveralls": "^3.0.3",
     "cspell": "^3.2.10",
-    "lerna": "^3.13.4"
+    "lerna": "^3.13.4",
+    "nyc": "^14.1.1",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "nyc": {
+    "include": [
+      "**/src/**/*.ts"
+    ],
+    "exclude": [
+      "**/src/**/*.test.ts",
+      "**/src/**/*.spec.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "json",
+      "html"
+    ]
   }
 }

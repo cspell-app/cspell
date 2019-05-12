@@ -11,7 +11,7 @@
     "build": "tsc -p .",
     "watch": "tsc -p . -w",
     "clean-build": "npm run clean && npm run build",
-    "clean": "rimraf dist ; rimraf temp",
+    "clean": "rimraf dist && rimraf temp",
     "lint": "tslint --project tsconfig.json",
     "test-ts": "NODE_ENV=test mocha --require ts-node/register --recursive --bail \"src/**/*.test.ts\"",
     "test-watch": "npm run build && mocha --require ts-node/register --watch --recursive \"src/**/*.test.ts\"",

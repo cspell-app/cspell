@@ -461,8 +461,6 @@ Example:
 
 
 <!---
-    These are at the bottom because the VSCode Marketplace leaves a bit space at the top
-
     cSpell:ignore jsja goededag alek wheerd behaviour tsmerge QQQQQ ncode
     cSpell:enableCompoundWords
     cSpell:includeRegExp Everything
@@ -470,4 +468,3 @@ Example:
     cSpell:ignore mkdirp githubusercontent streetsidesoftware vsmarketplacebadge visualstudio
     cSpell:words Verdana
 -->
-

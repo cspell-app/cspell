@@ -1,5 +1,20 @@
 {
+    "version": "0.1",
     "ignorePaths": [
-        "**/node_modules/**"
+        "**/node_modules/**",
+        "**/dist/**"
+    ],
+    "ignoreWords": [
+        "lcov",
+        "repo",
+        "tscv"
+    ],
+    "words": [
+        "DAWG",
+        "deserialize",
+        "disp",
+        "gzipped",
+        "monorepo",
+        "xxhash"
     ]
 }

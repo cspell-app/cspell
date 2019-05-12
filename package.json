@@ -10,7 +10,7 @@
     "clean": "lerna run clean",
     "install": "lerna bootstrap",
     "prepare": "npm run clean-build",
-    "spell-check": "cspell **/*.ts",
+    "check-spelling": "cspell **/{*.ts,*.md}",
     "lint-travis": "lerna run lint-travis",
     "travis-coverage": "lerna run travis-coverage",
     "test-spec": "lerna run test-spec",

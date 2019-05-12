@@ -17,7 +17,7 @@ script:
   - npm install
   # the prepare script run during install currently does clean-build
   - npm test
-  - npm run lint-travis
-  - npm run travis-coverage
+  # - npm run lint-travis
+  # - npm run travis-coverage
   # - npm run test-spec
   - node ./bin.js trace test

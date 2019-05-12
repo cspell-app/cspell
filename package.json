@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
+    "clean-build": "lerna run clean-build",
     "clean": "lerna run clean",
     "install": "lerna bootstrap",
-    "prepare": "npm run build",
+    "prepare": "npm run clean-build",
     "spell-check": "cspell **/*.ts",
     "test-spec": "npm run test-spec",
     "test": "lerna run test"
